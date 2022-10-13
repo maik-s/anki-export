@@ -192,7 +192,9 @@ class ApkgReader:
                 record.append(formatted_card["data"]["note"]["tags"])
 
                 if has_deck:
-                    record.append(self.find_deck_by_id(formatted_card["did"])["name"])
+                    deck = self.find_deck_by_id(formatted_card["did"])
+                    if deck:
+                        record.append(deck["name"])
 
                 result[
                     self.find_model_by_id(formatted_card["data"]["note"]["mid"])["name"]

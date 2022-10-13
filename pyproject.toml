@@ -1,14 +1,12 @@
-[tool.poetry]
+[project]
 name = "anki-export"
-version = "0.1.4"
+version = "0.1.4.1"
 description = "Export your Anki *.apkg to Python. Read Anki *.apkg in Python."
-authors = ["patarapolw <patarapolw@gmail.com>"]
+authors = [{name="patarapolw", "email"="patarapolw@gmail.com"}, {name="maik-s", email="maiks.github@gmail.com"}]
 license = "MIT"
 readme = "README.md"
 keywords = ["anki"]
-
-[tool.poetry.dependencies]
-python = ">=3.7"
+requires-python = ">=3.7"
 
 [tool.poetry.dev-dependencies]
 pyexcel-xlsxwx = "^0.1.8"
